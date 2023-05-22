@@ -45,6 +45,7 @@ a.site-btn { color: #fff;font-size: 15px; text-decoration: none; padding: 12px 3
 .bannersec .rocket img { width: 100%;position: relative;}
 .bannersec .rocket{text-align: end;}
 .navigat{display: none;}
+.mobilemenu{display:none;}
 
 /* features-section */
 
