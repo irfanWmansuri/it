@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Host</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="headersec">
+            <div class="container">
+                <div class="headertopsec">
+                    <div class="logo">
+                        <img src="./img/logo.png.webp" alt="">
+                    </div>
+                    <div class="navigation">
+                        <div class="nav">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-section">
+                            <button class="btn">login</button>
+                            <button class="btn">Register</button>
+                        </div>
+                    </div>
+                    <div class="mobilemenu">
+                        <div id="menu" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <ul class="navigat" id="navigat">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Experience</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bannersec">
+            <div class="container">
+                <div class="content">
+                    <h2>Unbeatable Offers</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris
+                        scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. </p>
+                    <a href="#" class="site-btn">Get your plan</a>
+                </div>
+                <div class="rocket">
+                    <img src="img/rocket.png.webp" width="589" height="507" alt="rocket">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section-title -->
+
+    <div class="features-section">
+        <div class="container">
+            <div class="section-title">
+                <img src="img/section-title-icon.png.webp" alt="">
+                <p>The best out there</p>
+                <h2>See our features</h2>
+            </div>
+            <div class="features-item">
+                <div class="ft-icon">
+                    <div class="img-div"><img src="./img/web-domain.png" alt="" height="47" width="47"></div>
+                    <h4>Buy your Domain</h4>
+                    <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium
+                        turpis eget nibh laoreet iaculis.</p>
+                </div>
+                <div class="ft-icon">
+                    <div class="img-div"><img src="./img/server.png" alt="" height="47" width="47"></div>
+                    <h4> Cloud Database</h4>
+                    <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium
+                        turpis eget nibh laoreet iaculis.</p>
+                </div>
+                <div class="ft-icon">
+                    <div class="img-div"><img src="./img/pc-smartphone.png" alt="" height="47" width="47"></div>
+                    <h4>SSD-Only</h4>
+                    <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium
+                        turpis eget nibh laoreet iaculis.</p>
+                </div>
+                <div class="ft-icon">
+                    <div class="img-div"><img src="./img/contact-book.png" alt="" height="47" width="47"></div>
+                    <h4>Smart Contacts</h4>
+                    <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium
+                        turpis eget nibh laoreet iaculis.</p>
+                </div>
+                <div class="ft-icon">
+                    <div class="img-div"><img src="./img/management.png" alt="" height="47" width="47"></div>
+                    <h4>Free Support</h4>
+                    <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium
+                        turpis eget nibh laoreet iaculis.</p>
+                </div>
+                <div class="ft-icon">
+                    <div class="img-div"><img src="./img/viral.png" alt="" height="47" width="47"></div>
+                    <h4>Viral Marketing</h4>
+                    <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam pretium
+                        turpis eget nibh laoreet iaculis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- domain-search -->
+    <div class="domain-search-section">
+        <div class="container">
+            <div class="section-title">
+                <img src="img/section-title-icon.png.webp" alt="">
+                <p>The best out there</p>
+                <h2 class="white">See our features</h2>
+            </div>
+            <div class="domain-form-wrap">
+                <form action="noaction">
+                    <input type="text" placeholder="Enter your website’s name">
+                    <button class="site-btn">Search</button>
+                    <p class="text">Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum.
+                        Etiam pretium turpis eget nibh laoreet iaculis</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- skill section -->
+    <div class="skill-section">
+        <div class="container">
+            <div class="sector">
+                <div class="single-area">
+                    <div class="single-progress-item">
+                        <p>Illustrator</p>
+                        <div class="progress-bar" data-progress="80">
+                            <div class="bar-inner" style="width:80%; background: #eb2b63">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-progress-item">
+                        <p>Photoshop</p>
+                        <div class="progress-bar" data-progress="90">
+                            <div class="bar-inner" style="width:90%; background: #eb2bae">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-progress-item">
+                        <p>SEO</p>
+                        <div class="progress-bar" data-progress="80">
+                            <div class="bar-inner" style="width:80%; background:#d22beb;">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-progress-item">
+                        <p>E-commerce</p>
+                        <div class="progress-bar" data-progress="60">
+                            <div class="bar-inner" style="width:60%; background:#972beb;">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-progress-item">
+                        <p>HTML</p>
+                        <div class="progress-bar" data-progress="80">
+                            <div class="bar-inner" style="width:70%; background:#732beb;">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- caraousal -->
+                <div class="carousal-section">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="content">
+                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam
+                                    pretium turpis eget nibh laoreet iacu-lis.Nullam lacinia ex eleifend orci porttitor,
+                                    suscipit interdum augue condimentum. iaculis.</p>
+                            </div>
+                            <div class="auther-pic">
+                                <img src="img/irfan.jpg" alt="" width="90px" height="90px">
+                            </div>
+                            <div class="auther-name">
+                                <h4>Irfan Mansuri</h4>
+                                <span>Frontend Developer</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam
+                                    pretium turpis eget nibh laoreet iacu-lis.Nullam lacinia ex eleifend orci porttitor,
+                                    suscipit interdum augue condimentum. iaculis.</p>
+                            </div>
+                            <div class="auther-pic">
+                                <img src="img/irfan.jpg" alt="" width="90px" height="90px">
+                            </div>
+                            <div class="auther-name">
+                                <h4>Irfan Mansuri</h4>
+                                <span>Frontend Developer</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content">
+                                <p>Nullam lacinia ex eleifend orci porttitor, suscipit interdum augue condimentum. Etiam
+                                    pretium turpis eget nibh laoreet iacu-lis.Nullam lacinia ex eleifend orci porttitor,
+                                    suscipit interdum augue condimentum. iaculis.</p>
+                            </div>
+                            <div class="auther-pic">
+                                <img src="img/irfan.jpg" alt="" width="90px" height="90px">
+                            </div>
+                            <div class="auther-name">
+                                <h4>Irfan Mansuri</h4>
+                                <span>Frontend Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- plans-section -->
+    <div class="plans-section">
+        <div class="container">
+            <div class="section-title">
+                <img src="img/section-title-icon.png.webp" alt="">
+                <p>The best out there</p>
+                <h2 class="white">See our features</h2>
+            </div>
+            <div class="plans">
+                <div class="pricing-plan">
+                    <div class="pricing-title">
+                        <h4>BASIC PLAN</h4>
+                    </div>
+                    <div class="pricing-body">
+                        <h2>$9<span>/Month</span></h2>
+                        <ul>
+                            <li>1GB storage</li>
+                            <li>3GB bandwidth</li>
+                            <li>Free Email Addresses</li>
+                            <li>24/7 security monitoring</li>
+                            <li>24/7 technical support</li>
+                        </ul>
+                        <a href="#" class="site-btn">Get Plan</a>
+                    </div>
+                </div>
+                <div class="pricing-plan">
+                    <div class="pricing-title title-change">
+                        <h4>STAR PLAN</h4>
+                    </div>
+                    <div class="pricing-body">
+                        <h2>$9<span>/Month</span></h2>
+                        <ul>
+                            <li>1GB storage</li>
+                            <li>3GB bandwidth</li>
+                            <li>Free Email Addresses</li>
+                            <li>24/7 security monitoring</li>
+                            <li>24/7 technical support</li>
+                        </ul>
+                        <a href="#" class="site-btn">Get Plan</a>
+                    </div>
+                </div>
+                <div class="pricing-plan">
+                    <div class="pricing-title">
+                        <h4>VIP PLAN</h4>
+                    </div>
+                    <div class="pricing-body">
+                        <h2>$9<span>/Month</span></h2>
+                        <ul>
+                            <li>1GB storage</li>
+                            <li>3GB bandwidth</li>
+                            <li>Free Email Addresses</li>
+                            <li>24/7 security monitoring</li>
+                            <li>24/7 technical support</li>
+                        </ul>
+                        <a href="#" class="site-btn">Get Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hosting-section">
+        <div class="container">
+            <div class="host-content">
+                <h1>Dedicated hosting solutions only $129.99/month</h1>
+                <p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi
+                    elit consequat ipsum</p>
+            </div>
+            <div class="site-button"><a href="#">Get Started</a></div>
+        </div>
+    </div>
+    <div class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="icons">
+                    <div class="logo">
+                        <img src="img/logo.png.webp" alt="###">
+                    </div>
+                    <p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor,
+                        nisi elit consequat ipsum.Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin
+                        lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+                    <div class="fw-social social">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+
+                </div>
+                <div class="links">
+                    <h4 class="title">Usefull Links</h4>
+                    <div class="title-box">
+                        <div class="title-links">
+                            <ul>
+                                <li><a href="">Web Hosting</a></li>
+                                <li><a href="">WordPress Hosting</a></li>
+                                <li><a href="">VPS Hosting</a></li>
+                                <li><a href="">Cloud Server</a></li>
+                                <li><a href="">Reseller Package</a></li>
+                                <li><a href="">Dedicated Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="title-links">
+                            <ul>
+                                <li><a href="">Web Hosting</a></li>
+                                <li><a href="">WordPress Hosting</a></li>
+                                <li><a href="">VPS Hosting</a></li>
+                                <li><a href="">Cloud Server</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="posts">
+                    <h4 class="title">Usefull Links</h4>
+                    <div class="ip-item">
+                        <div class="ip-img">
+                            <img src="./img/1.jpg.webp" alt="">
+                        </div>
+                        <div class="ip-content">
+                            <p>Web Hosting for everyone</p>
+                            <span>Oct 21, 2018</span>
+                        </div>
+                    </div>
+                    <div class="ip-item">
+                        <div class="ip-img">
+                            <img src="./img/2.jpg.webp" alt="">
+                        </div>
+                        <div class="ip-content">
+                            <p>Web Hosting for everyone</p>
+                            <span>Oct 21, 2018</span>
+                        </div>
+                    </div>
+                    <div class="ip-item">
+                        <div class="ip-img">
+                            <img src="./img/3.jpg.webp" alt="">
+                        </div>
+                        <div class="ip-content">
+                            <p>Web Hosting for everyone</p>
+                            <span>Oct 21, 2018</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script> function onClickMenu() {
+                document.getElementById("menu").classList.toggle("icon");
+                document.getElementById("navigat").classList.toggle("change");}
+            </script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    800: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        </script>
+</body>
+
+</html>
